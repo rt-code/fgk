@@ -1,27 +1,33 @@
+.space-line{
+    height: 15px;
+    display: block;
+    width: 100%;
+}
 // MODULE HEADER
 
 .header-module{
     width: 100%;
-    height: 150px;
-    background: url('../../../img/blue/hdr.jpg') $color-light;
+    height: 103px;
+    background: url('../../../img/gray/hdr.jpg') $color-light;
     display: flex;
     align-items: center;
     padding:15px 30px;
     position: relative;
+    color:#fff;
     .desc{
         font-family: $w300;
         width: 320px;
-        font-size: 1.4em;
+        font-size: 1.3em;
         margin: 0 0 0 30px;
         span{
-            font-size: 1.55em;
+            font-size: 1.2em;
             text-transform: uppercase;
             font-family: $w500;
         }
     }
     .social{
         position: absolute;
-        bottom:15px;
+        bottom:37px;
         right:15px;
         ul{
             list-style: none;
@@ -35,8 +41,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border-radius:8px;
-                    border:solid 3px $color-light;
+                    border-radius:50%;
 
                     img{
                         vertical-align: top;
@@ -46,7 +51,7 @@
                         height: 16px;
                     }
                     &:hover{
-                        background: $color;
+                        background: $green;
                     }
                 }
             }
@@ -77,7 +82,8 @@ nav{
                 text-align: center;
                 display: block;
                 text-transform: uppercase;
-                font-family: $w500;
+                font-family: $w700;
+                letter-spacing: 0.3px;
                 font-size: 12px;
                 transition:all .05s linear;
                 background: $color;
@@ -87,7 +93,7 @@ nav{
             }
             &.active{
                 a{
-                    background: $gray-dark;
+                    background: $green;
                 }
             }
                 .podmenu{
@@ -154,7 +160,7 @@ nav{
         position: relative;
         margin: 0 0 0 10px;
         img{
-            width: 60px;
+            width: 45px;
         }
     }
     .nav{
@@ -331,7 +337,7 @@ nav{
                 width: 15px;
                 height: 30px;
                 vertical-align: top;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -356,7 +362,7 @@ nav{
                 width: 15px;
                 vertical-align: top;
                 height: 30px;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -372,7 +378,7 @@ nav{
                 list-style: none;
                 position: absolute;
                 right:15px;
-                top:255px;
+                bottom:20px;
                 li{
                     display:inline-block;
                     vertical-align: top;
@@ -399,7 +405,7 @@ nav{
                 .icons{
                     position: absolute;
                     top:30px;
-                    right:30px;
+                    right:15px;
                     z-index: 15;
                     .video{
                         display: inline-block;
@@ -412,7 +418,7 @@ nav{
                             vertical-align: top;
                             width: 23px;
                             height: 20px;
-                            background: url('../../../img/blue/icons/svgsprite/video.svg') ;
+                            background: url('../../../img/gray/icons/svgsprite/video.svg') ;
                             background-size: contain;
                             background-repeat: no-repeat;
                         }
@@ -427,7 +433,7 @@ nav{
                             vertical-align: top;
                             width: 23px;
                             height: 20px;
-                            background: url('../../../img/blue/icons/svgsprite/photo.svg') ;
+                            background: url('../../../img/gray/icons/svgsprite/photo.svg') ;
                             background-size: contain;
                             background-repeat: no-repeat;
                         }
@@ -439,7 +445,7 @@ nav{
                 bottom:0;
                 left:0;
                 right:0;
-                background: rgba(0, 0, 0, 0.5);
+                background: rgba(0, 0, 0, 0.7);
                 z-index: 15;
                 padding:10px 30px;
                 transition:all .2s linear;
@@ -644,7 +650,7 @@ nav{
                 width: 10px;
                 height: 20px;
                 vertical-align: top;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -670,7 +676,7 @@ nav{
                 width: 10px;
                 vertical-align: top;
                 height: 20px;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -1039,7 +1045,7 @@ nav{
                     height: 20px;
                     transform:rotate(-180deg);
                     vertical-align: top;
-                    background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                    background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
@@ -1067,7 +1073,7 @@ nav{
                     width: 10px;
                     height: 20px;
                     vertical-align: top;
-                    background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                    background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
@@ -1261,7 +1267,7 @@ nav{
                     right:-20px;
                     width: 13px;
                     height: 10px;
-                    background: url('../../../img/blue/icons/svgsprite/arrow-bottom.svg');
+                    background: url('../../../img/gray/icons/svgsprite/arrow-bottom.svg');
                     background-size: contain;
                     background-repeat: no-repeat;
                     transform: rotate(90deg);
@@ -1379,7 +1385,7 @@ nav{
                 width: 15px;
                 height: 30px;
                 vertical-align: top;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -1401,7 +1407,7 @@ nav{
                 width: 15px;
                 vertical-align: top;
                 height: 30px;
-                background: url('../../../img/blue/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -1415,7 +1421,7 @@ nav{
                 height: 60px;
                 img{
                     max-width:80%;
-                    max-height:80%;
+                    max-height:45px;
                     vertical-align: top;
                 }
             }
@@ -1433,25 +1439,26 @@ nav{
 // MODULE FOOTER
 
 .footer-module{
-    padding:30px 0px 0;
-    background: $color-light;
+    padding:30px 15px 0;
     width: 100%;
+    background: $color-dark;
     .top{
         display:flex;
-        padding:0 30px 30px;
+        padding:0 0px 0px;
         justify-content: space-between;
         ul{
             list-style: none;
             li{
                 a{
                     text-decoration: none;
-                    color:$color-dark;
+                    color:#fff;
                     font-size: 0.8em;
                     &.title{
                             text-transform: uppercase;
                             font-family: $w700;
                             margin-bottom: 10px;
                             display: inline-block;
+                            max-width:90px;
                     }
                     &:hover{
                         text-decoration: underline;
@@ -1463,8 +1470,8 @@ nav{
     .bottom{
         height: 100px;
         display:flex;
-        padding:0 30px;
-        background: $white;
+        padding:0 0px;
+        color:#fff;
         align-items: center;
         .col{
             width: 33.333%;
@@ -1484,7 +1491,7 @@ nav{
         .developer{
             text-align: center;
             font-size: 0.8em;
-            color:$color-dark;
+            color:#fff;
             display: inline-block;
             text-decoration: none;
         }
@@ -1494,37 +1501,38 @@ nav{
         }
         .counter-position{
             display: inline-block;
+            margin-left: auto;
             vertical-align: top;
             img{
-                vertical-align: top;
+                display: block;
             }
         }
         .social{
             list-style: none;
             display: inline-block;
-            margin: 0 30px 0 0;
+            margin: 0 30px 0 auto;
             vertical-align: top;
             li{
                 display: inline-block;
                 vertical-align: top;
                 margin: 0 2px;
                 a{
-                    background: $color-dark;
+                    background: #6d737d;
                     width: 24px;
                     height: 24px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border-radius:4px;
+                    border-radius:50%;
                     img{
                         vertical-align: top;
                         max-height: 16px;
                         max-width: 16px;
-                        width: 16px;
-                        height: 16px;
+                        width: 13px;
+                        height: 13px;
                     }
                     &:hover{
-                        background: $color;
+                        background: $green;
                     }
                 }
             }

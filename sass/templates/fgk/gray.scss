@@ -6,7 +6,8 @@
 @import "modules-media";
 
 body{
-	background: url('../../../img/blue/bg.jpg') center top fixed no-repeat $color-light;
+	background: url('../../../img/gray/bg.jpg') center top fixed no-repeat #081831;
+    background-size: cover;
     color:$black;
     font: 100%/1.3 $w300;
     overflow-x:hidden;
@@ -28,7 +29,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url('../../../img/blue/loader.svg') center no-repeat #fff;
+    background: url('../../../img/gray/loader.svg') center no-repeat #fff;
 }
 
 .scrollable .scroll-bar.vertical{
