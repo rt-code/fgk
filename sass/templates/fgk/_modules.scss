@@ -1,5 +1,5 @@
 .space-line{
-    height: 15px;
+    height: 20px;
     display: block;
     width: 100%;
 }
@@ -199,10 +199,10 @@ nav{
                     text-decoration: none;
                     padding:15px 30px;
                     color:$black;
-                    border-bottom:solid 1px darken($color-light, 10%);
+                    border-bottom:solid 1px lighten($color-light, 10%);
                 }
                 .podmenu{
-                    background: darken($color-light, 10%);
+                    background: lighten($color-light, 10%);
                     display: none;
                     &.open{
                         display: block;
@@ -337,7 +337,7 @@ nav{
                 width: 15px;
                 height: 30px;
                 vertical-align: top;
-                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left-w.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -362,7 +362,7 @@ nav{
                 width: 15px;
                 vertical-align: top;
                 height: 30px;
-                background: url('../../../img/gray/icons/svgsprite/left.svg') ;
+                background: url('../../../img/gray/icons/svgsprite/left-w.svg') ;
                 background-size: contain;
                 background-repeat: no-repeat;
             }
@@ -741,7 +741,7 @@ nav{
             margin: 0 10px 0 0;
         }
         .left{
-            width: 70%;
+            width: 100%;
             white-space:nowrap;
             overflow: hidden;
             text-overflow:ellipsis;
@@ -761,6 +761,24 @@ nav{
             }
         }
 
+    }
+    .more-btn{
+        background: $green;
+        color:#fff;
+        display: block;
+        text-align: right;
+        height: 50px;
+        padding:0 15px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: $w500;
+        line-height: 50px;
+        transition:all .2s linear;
+        &:hover{
+            background: lighten($green, 10%);
+        }
     }
     .news-cube-module{
         background: #fff;
@@ -857,7 +875,12 @@ nav{
                 }
                 &:hover{
                     .img-wrap{
-                        border-color:$color;
+                        border-color:#fff;
+                    }
+                    .text{
+                        .title{
+                         color:$green;
+                        }
                     }
                 }
                 .text{
@@ -877,7 +900,8 @@ nav{
                     }
                     .date{
                         margin: 0 5px 0 0;
-                        color:$gray-light;
+                        color:$green;
+                        font-family: $w500;
                         vertical-align: top;
                         font-size: 0.75em;
                     }
@@ -1533,6 +1557,101 @@ nav{
                     }
                     &:hover{
                         background: $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MODULE EVENTS
+
+.events-module{
+    width: 33.3333%;
+    .top{
+        background: darken($color-dark, 5%);
+        color:#fff;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding:0 30px;
+        .title{
+            font-family: $w700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .right{
+            background: $green;
+            width: 23px;
+            font-size: 14px;
+            text-align: center;
+            height: 23px;
+            font-family: $w700;
+            display: block;
+            cursor: pointer;
+            line-height: 23px;
+            &:hover{
+                background: lighten($green, 5%);
+            }
+        }
+        .left{
+            background: $green;
+            width: 23px;
+            font-size: 14px;
+            text-align: center;
+            height: 23px;
+            font-family: $w700;
+            display: block;
+            cursor: pointer;
+            line-height: 23px;
+            &:hover{
+                background: lighten($green, 5%);
+            }
+        }
+    }
+    .more-btn{
+        background: lighten($color-dark, 7%);
+        &:hover{
+            background: lighten($color-dark, 14%);
+        }
+    }
+    .center{
+        background: $color-light3;
+        color:#fff;
+        .event-list{
+            height: 1050px;
+            padding:0 30px;
+        }
+        a{
+            color:#fff;
+        }
+        .nav{
+            height: 50px;
+            padding:0 30px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                text-decoration: none;
+            }
+            .title-link{
+                font-family: $w700;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                &:hover{
+                    color:$color-light;
+                }
+            }
+            .right{
+                text-align: right;
+                a{
+                    margin: 0 0 0 10px;
+                    font-size: 13px;
+                    text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
                     }
                 }
             }
