@@ -1510,14 +1510,18 @@ nav{
             align-items: center;
             .logo{
                 margin: 0 20px 0 0;
+                img{
+                    vertical-align: top;
+                }
             }
         }
         .developer{
             text-align: center;
             font-size: 0.8em;
             color:#fff;
-            display: inline-block;
+            display: block;
             text-decoration: none;
+            margin: 0 auto;
         }
         .logo{
             display: inline-block;
@@ -1575,7 +1579,7 @@ nav{
         align-items: center;
         justify-content: space-between;
         height: 50px;
-        padding:0 30px;
+        padding:0 20px;
         .title{
             font-family: $w700;
             text-transform: uppercase;
@@ -1621,14 +1625,131 @@ nav{
         color:#fff;
         .event-list{
             height: 1050px;
-            padding:0 30px;
-        }
+            padding:0 20px;
+                .overview{
+                    width: 100%;
+                }
+            }
+            .event-block{
+                background: $color-light;
+                border:solid 1px $color-dark;
+                display: flex;
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                color:$color-dark;
+                font-size: 12px;
+                text-decoration: none;
+                transition:all .1s linear;
+                margin: 0 0 15px 0;
+                &.color-yellow{
+                    background: $yellow;
+                    &:hover{
+                        background: darken($yellow, 10%);
+                    }
+                    .block-content{
+                        .block-top{
+                            .date{
+                                color:$color-dark;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    background: lighten($color-light, 5%);
+                }
+                .img-wrap{
+                    padding: 0 6px;
+                    width: 88px;
+                    text-align: center;
+                    img{
+                        max-width: 100%;
+                        vertical-align: top;
+                    }
+                }
+                .block-content{
+                    padding:10px 0;
+                    width: calc(100% - 100px);
+                    .location{
+                        width: 100%;
+                        display: block;
+                        white-space:nowrap;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        font-size: 12px;
+                        color:$color;
+                        margin-bottom: 5px;
+                        font-style: italic;
+                    }
+                    .text{
+                        p{
+                            text-transform: uppercase;
+                            font-family: $w700;
+                            font-size: 11px;
+                        }
+                        table{
+                            width: 100%;
+                            tr{
+                                td{
+                                    vertical-align:middle;
+                                    &.team-name{
+                                        text-transform: uppercase;
+                                        color:$color-dark;
+                                        font-family: $w500;
+                                        font-size: 14px;
+                                    }
+                                    .team-location{
+                                        color:$color-dark;
+                                        font-family: $w300;
+                                        font-size: 10px;                                        
+                                    }
+                                    &.count{
+                                        text-transform: uppercase;
+                                        font-family: $w700;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .block-top{
+                        display:flex;
+                        align-items: center;
+                        margin: 0 0 5px 0;
+                        .date{
+                            margin: 0 8px 0 0;
+                            font-family: $w700;
+                            color:$color-light3;
+                        }
+                        .time{
+                            margin: 0 10px 0 0;
+                            color:$color-dark;
+                            font-size: 12px;
+                        }
+                        .tag{
+                            background: $color-light3;
+                            color:#fff;
+                            text-transform: uppercase;
+                            padding:2px 5px;
+                            font-size: 10px;
+                            margin: 0 5px 0 0;
+                            font-family: $w500;
+                            &.color-dark{
+                                background: $color-dark;
+                            }
+                            &.color-green{
+                                background: $green;
+                            }
+                        }
+                    }
+                }
+            }
         a{
             color:#fff;
         }
         .nav{
             height: 50px;
-            padding:0 30px;
+            padding:0 20px;
             display:flex;
             justify-content: space-between;
             align-items: center;
@@ -1653,6 +1774,156 @@ nav{
                     &:hover{
                         text-decoration: none;
                     }
+                }
+            }
+        }
+    }
+
+}
+
+// MODULE MEDIA
+
+.module-media-type2{
+    display: flex;
+    width: 100%;
+    .right{
+        width: 33.3333%;
+        ul{
+            list-style: none;
+            display:flex;
+            flex-wrap:wrap;
+            height: 100%;
+            li{
+                width: 50%;
+                height: 33.333%;
+                overflow: hidden;
+                padding:0 0 15px 15px;
+                a{
+                    display: block;
+                    height: 100%;
+                    overflow: hidden;
+                    &:hover{
+                        .img-wrap{
+                            opacity:0.8;
+                        }
+                    }
+                }
+                .img-wrap{
+                    max-width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    display: block;
+                    transition:all .1s linear;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        vertical-align: top;
+                    }
+                }
+                &.btn{
+                    a{
+                        display: flex;
+                        color:#fff;
+                        align-items: center;
+                        justify-content: center;
+                        padding:15px 30px;
+                        text-decoration: none;
+                        letter-spacing: 0.5px;
+                        font-size: 15px;
+                        line-height: 1.2;
+                        font-family: $w700;
+                        text-transform: uppercase;
+                        background: $green;
+                        transition:all .1s linear;
+                        &:hover{
+                            background: lighten($green, 5%);
+                        }
+                    }
+                }
+                &:nth-child(5){
+                    padding-bottom: 0;
+                }
+                &:nth-child(6){
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    .left{
+        width: 66.6666%;
+        position: relative;
+    }
+    .module-title{
+        font-size: 15px;
+        text-transform: uppercase;
+        background: $green;
+        position: absolute;
+        color:#fff;
+        font-family: $w700;
+        top:0;
+        left:0;
+        display: inline-block;
+        z-index: 50;
+        letter-spacing: 0.5px;
+        padding:15px 25px;
+    }
+    .media-big-link{
+        display: block;
+        position: relative;
+        img{
+            vertical-align: top;
+            width: 100%;
+        }
+        .description{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background: rgba(0,0,0,.5);
+                z-index: 15;
+                padding: 10px 30px;
+                -webkit-transition: all .2s linear;
+                transition: all .2s linear;
+                .date{
+                    color: $color-light;
+                    margin: 0 0 5px;
+                    font-family: $w500;
+                    text-transform: uppercase;
+                    font-size: 80%;
+                }
+                .title{
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 1.6em;
+                    font-family: $w700;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+        }
+        &.video{
+            &:before{
+                content:'';
+                display: block;
+                background: url('../../../img/play.png') no-repeat;
+                background-size: contain;
+                position: absolute;
+                width:90px;
+                height: 90px;
+                top:50%;
+                left:50%;
+                z-index: 50;
+                margin: -45px 0 0 -45px;
+                transform:scale(1);
+                transition:all .1s linear;
+            }
+            &:hover{
+                &:before{
+                    transform:scale(0.8);
+                }
+                .description{
+                    background: rgba(0,0,0,.7);
                 }
             }
         }

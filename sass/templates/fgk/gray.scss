@@ -1,5 +1,3 @@
-
-
 @import "fonts";
 @import "variables";
 @import "modules";
@@ -49,10 +47,37 @@ body{
     .grid-sizer{
         width: 50%;
     }
+    .events-module .center .event-list{
+        height: 822px;
+    }
+    .news-stroke-module ul li{
+        &:nth-child(3){
+            display: none;
+        }
+        &:nth-child(4){
+            display: none;
+        }
+        &:nth-child(5){
+            display: none;
+        }
+    }
 }
 
 @media only screen and (max-width : 767px) {
     .grid-sizer{
         width: 100%;
+    }
+    .events-module .center .event-list{
+        height: 230px;
+    }
+    .footer-module .bottom .vertical-center .logo{
+        margin-right: 10px;
+        display: none;
+        img{
+            width: 25px;
+        }
+    }
+    .footer-module .bottom .copyright{
+        margin-right: 0;
     }
 }

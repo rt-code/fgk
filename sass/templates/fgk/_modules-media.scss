@@ -2,14 +2,60 @@
     @media only screen and (max-width : 1040px) {
         .header-module{
             background-size: cover;
-        }
-    }
-    @media only screen and (max-width : 1040px) {
-        .header-module{
             display: none;
         }
     }
-
+// MODULE EVENTS
+    @media only screen and (max-width : 1040px) {
+        .events-module{
+            width: 50%;
+        }
+    }
+    @media only screen and (max-width : 767px) {
+        .events-module{
+            width: 100%;
+            .center{
+                .event-list{
+                    padding:0 10px;
+                }
+            }
+        }
+    }
+// MODULE MEDIA TYPE 2
+    @media only screen and (max-width : 1040px) {
+        .module-media-type2{
+            width: 100%;
+            padding:0 15px;
+        }
+    }
+    @media only screen and (max-width : 767px) {
+        .module-media-type2 .media-big-link.video:before{
+            transform:scale(0.5);
+        }
+        .module-media-type2 .media-big-link .description .title{
+            font-size: 1.2em;
+        }
+        .module-media-type2 .module-title{
+            padding:10px 15px;
+        }
+        .module-media-type2{
+            width: 100%;
+            flex-wrap:wrap;
+            padding:0;
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
+                ul{
+                    margin: 5px;
+                    li{
+                        padding:5px;
+                    }
+                }
+            }
+        }
+    }
 // MODULE NAV
     @media only screen and (max-width : 1040px) {
         .mobile-nav-module{
@@ -94,6 +140,9 @@
                 }
                 .text{
                     width: 100%;
+                    .desc{
+                        font-size: 0.9em;
+                    }
                 }
             }
         }
@@ -285,7 +334,7 @@
         .top{
             padding:0px 15px 0;
             ul{
-                width: 100%;
+                width: 50%;
             }
         }
         .bottom{
