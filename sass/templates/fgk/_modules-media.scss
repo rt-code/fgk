@@ -184,8 +184,11 @@
         width: 100%;
     }
 }
-// MODULE NEWS STROKE
+
+
+
 @media only screen and (max-width : 1040px) {
+    // MODULE NEWS STROKE
     .news-stroke-module{
         width: 50%;
         ul{
@@ -195,8 +198,52 @@
             }
         }
     }
+    // MOBULE BANER
+    .baner-module{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    // MODULE MEDIA
+    .media-module{
+        width: 100%;
+        height: initial;
+    }
+    // MODULE BOMBARDIRS
+        .bombardirs-module{
+            width: 50%;
+        }
+
+    // MODULE SOCIAL
+    .social-module{
+        width: 50%;
+    }
+    // MODULE FOOTER
+    .footer-module{
+        .top{
+            flex-wrap:wrap;
+            justify-content: flex-start;
+            ul{
+                width: 25%;
+                margin: 0 0 15px 0;
+                padding:0 35px 0 0;
+            }
+        }
+        .bottom{
+            .social{
+                li{
+                    margin:2px;
+                }
+            }
+        }
+    }
 }
+
+
+
 @media only screen and (max-width : 767px) {
+    // MODULE NEWS STROKE
     .news-stroke-module{
         width: 100%;
         ul{
@@ -213,33 +260,11 @@
             }
         }
     }
-}
-// MODULE CHAMPIONSHIP
-    .championship-module{
-
-    }
-// MOBULE BANER
-@media only screen and (max-width : 1040px) {
-    .baner-module{
-        width: 50%;
-        img{
-            width: 100%;
-        }
-    }
-}
-@media only screen and (max-width : 767px) {
+    // MOBULE BANER
     .baner-module{
         width: 100%;
     }
-}
-// MODULE MEDIA
-@media only screen and (max-width : 1040px) {
-    .media-module{
-        width: 100%;
-        height: initial;
-    }
-}
-    @media only screen and (max-width : 767px) {
+    // MODULE MEDIA
         .media-module{
             .top{
                 .filters{
@@ -263,35 +288,15 @@
                 }
             }
         }
-    }
-// MODULE BOMBARDIRS
-    @media only screen and (max-width : 1040px) {
-        .bombardirs-module{
-            width: 50%;
-        }
-    }
-    @media only screen and (max-width : 767px) {
+    // MODULE BOMBARDIRS
         .bombardirs-module{
             width: 100%;
         }
-    }
-// MODULE SOCIAL
-@media only screen and (max-width : 1040px) {
-    .social-module{
-        width: 50%;
-    }
-}
-@media only screen and (max-width : 767px) {
+    // MODULE SOCIAL
     .social-module{
         width: 100%;
     }
-}
-// MODULE VOICE
-    .voice-module{
- 
-    }
-// MODULE PARTNERS
-    @media only screen and (max-width : 767px) {
+    // MODULE PARTNERS
         .partners-module{
             height: initial;
             padding:30px 15px 10px;
@@ -307,29 +312,7 @@
                 }
             }
         }
-    }
-// MODULE FOOTER
-@media only screen and (max-width : 1040px) {
-    .footer-module{
-        .top{
-            flex-wrap:wrap;
-            justify-content: flex-start;
-            ul{
-                width: 25%;
-                margin: 0 0 15px 0;
-                padding:0 35px 0 0;
-            }
-        }
-        .bottom{
-            .social{
-                li{
-                    margin:2px;
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width : 767px) {
+    // MODULE FOOTER
     .footer-module{
         .top{
             padding:0px 15px 0;
@@ -364,6 +347,13 @@
                 width: 120px;
                 margin-left: auto;
             }
+        }
+    }
+    // MODULE CONTENT
+    .content-module{
+        .page-top{
+            width: 100%;
+            overflow-x:auto;
         }
     }
 }
