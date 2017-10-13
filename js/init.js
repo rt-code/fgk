@@ -12,6 +12,8 @@ $(document).ready(function() {
 
          });
 
+        $( ".tabs" ).tabs();
+
         $('#wrapper').masonry('reload')
         //loader
         $(".loader").fadeOut("slow");

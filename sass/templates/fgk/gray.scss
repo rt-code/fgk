@@ -150,6 +150,93 @@ body{
     }
 }
 
+.tabs{
+    .tab-content{
+
+    }
+    ul.tabs-nav{
+        list-style: none;
+        display:flex;
+        margin-bottom: 15px;
+        border-bottom:solid 3px $color;
+        li{
+            display: block;
+            
+            text-align: center;
+            a{
+                text-decoration: none;
+                color:$color;
+                padding:15px 25px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $w500;
+                text-decoration: underline;
+                display: block;
+                &:hover{
+                    text-decoration: none;
+                    color:$green;
+                }
+            }
+            &.ui-state-active{
+                background: $color;
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.tournament-details-page{
+    padding:30px;
+    .tournament-tabs{
+
+    }
+    .top-info{
+        display:flex;
+        margin-bottom: 40px;
+        .img-wrap{
+            margin: 0 50px 0 0;
+        }
+        .text{
+            width: calc(100% - 200px);
+            .title{
+                font-size: 20px;
+                text-transform: uppercase;
+                font-family: $w700;
+                color:$color;
+                margin-bottom: 25px;
+                max-width: 500px;
+            }
+            .row{
+                display:flex;
+                width: 100%;
+                color:$color;
+                font-size: 12px;
+                justify-content: space-between;
+                .col{
+                    width: 33.3333%;
+                    padding:0 15px 0 0;
+                    strong{
+                        font-family: $w500;
+                    }
+                    p{
+                        margin-bottom: 10px;
+                        text-transform: uppercase;
+                        font-family: $w400;
+                    }
+                    .col-title{
+                        font-family: $w700;
+                        margin-bottom: 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 1040px) {
     #wrapper{
         width: 100%;
