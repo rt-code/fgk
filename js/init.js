@@ -12,7 +12,10 @@ $(document).ready(function() {
 
          });
 
-        $( ".tabs" ).tabs();
+        $( ".tabs" ).tabs({
+          show: { effect: "blind", duration: 200 },
+          hide: { effect: "blind", duration: 200 }
+        });
 
         $('#wrapper').masonry('reload')
         //loader

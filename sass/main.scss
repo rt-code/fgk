@@ -13,3 +13,21 @@ table{
 .container-fluid-my{
     width: calc(1000px + 2rem);
 }
+
+.table-wrap{
+	width: 100%;
+	table{
+		width: 100%;
+		tr{
+			th{
+				padding:10px;
+				vertical-align: middle;
+				text-align: left;
+			}
+			td{
+				padding:5px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
