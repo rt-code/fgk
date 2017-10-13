@@ -22,6 +22,31 @@
         }
         .filter{
             display:flex;
+            .media-filter{
+                margin: 0 25px 0 0;
+                display:flex;
+                align-items: center;
+                label{
+                    display: block;
+                    span{
+                        text-transform: uppercase;
+                        margin: 0 10px;
+                        font-family: $w700;
+                        font-size: 16px;
+                        text-decoration: underline;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    input{
+                        display: none;
+                        &:checked + span{
+                            color:$green;
+                        }
+                    }
+                }
+            }
             .input-row{
                 margin: 0 10px;
                 select{

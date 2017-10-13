@@ -37,14 +37,7 @@ body{
         background: $white;
     }
 }
-
-.news-list-page{
-    padding:30px 15px;
-    .list{
-        display:flex;
-        flex-wrap:wrap;
-    }
-    .news-load-more-btn{
+    .load-more-btn{
         background: $yellow;
         text-decoration: none;
         text-align: center;
@@ -72,6 +65,13 @@ body{
             background: darken($yellow, 10%);
         }
     }
+
+.news-list-page{
+    padding:30px 15px;
+    .list{
+        display:flex;
+        flex-wrap:wrap;
+    }
     .news-block{
         display: block;
         overflow: hidden;
@@ -89,6 +89,8 @@ body{
         .title{
             margin: 15px 15px 0;
             font-size: 16px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
             color:$color-dark;
             font-family: $w700;
         }
@@ -105,6 +107,48 @@ body{
     }
 }
 
+.media-list-page{
+    padding:30px 15px;
+    background: #151d2b;
+    .list{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .media-block{
+        display: block;
+        overflow: hidden;
+        margin: 0 15px 30px;
+        width: calc(33.333% - 30px);
+        text-decoration: none;
+        .img-wrap{
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+        .date{
+            margin: 10px 0px 0;
+            font-size: 14px;
+            color:$color-light;
+            font-family: $w200;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .title{
+            margin: 5px 0px 0;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color:#fff;
+            font-family: $w700;
+        }
+        &:hover{
+            .title{
+                color:$yellow;
+            }
+        }
+    }
+}
 
 @media only screen and (max-width : 1040px) {
     #wrapper{
@@ -135,6 +179,14 @@ body{
     .news-list-page{
         .list{
             .news-block{
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+    .media-list-page{
+        .list{
+            .media-block{
                 width: 100%;
                 margin: 0 0 15px 0;
             }
