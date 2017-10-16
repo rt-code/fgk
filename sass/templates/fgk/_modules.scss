@@ -47,6 +47,25 @@
                     }
                 }
             }
+            .line{
+                background: $color;
+                width: 1px;
+                height: 25px;
+                margin: 0 15px;
+            }
+            .btn{
+                background: $yellow;
+                text-decoration: none;
+                font-size: 12px;
+                height: 25px;
+                font-family: $w500;
+                line-height: 25px;
+                display: inline-block;
+                padding:0 15px;
+                &:hover{
+                    background: darken($yellow, 10%);
+                }
+            }
             .input-row{
                 margin: 0 10px;
                 select{
