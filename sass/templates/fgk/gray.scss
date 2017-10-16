@@ -566,8 +566,13 @@ body{
         .calendar-block{
             flex-wrap:wrap;
             justify-content: center;
+            .calendar-content{
+                width: 100%;
+            }
             .date-block{
                 margin: 0 0 5px 0;
+                width: 100%;
+                justify-content: center;
                 .date{
                     font-size: 12px;
                     width: initial;
@@ -609,6 +614,24 @@ body{
 }
 
 @media only screen and (max-width : 767px) {
+    .tournaments-page{
+        padding:15px;
+        .tournaments-top{
+            flex-wrap:wrap;
+            justify-content: center;
+            .slider-block{
+                margin: 0 5px;
+                .name{
+                    font-size: 12px;
+                }
+            }
+            .filter{
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     .content-module{
         .page-top{
             .title{
@@ -658,15 +681,13 @@ body{
                     .team-img{
                         height: initial;
                         width: 20px;
-                        margin: 0 5px;
+                        margin: 0 10px;
                     }
                     .team{
-                        width: 80px;
+                        width: calc(50% - 70px);
                         margin: 0;
                         text-align: left;
-                        &.tr{
-                            text-align: left;
-                        }
+                        
                         .team-name{
                             width: 100%;
                             font-size: 14px;
