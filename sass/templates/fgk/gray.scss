@@ -236,6 +236,9 @@ body{
         .size{
             margin-left: auto;
         }
+        .name{
+            width: calc(100% - 100px);
+        }
     }
 }
 
@@ -254,6 +257,13 @@ body{
                         vertical-align: top;
                     }
                 }
+                    .td-table-img-min-wrap span{
+                        max-width: 300px;
+                        display: inline-block;
+                        overflow:hidden;
+                        white-space:nowrap;
+                        text-overflow:ellipsis;
+                    }
     table{
         width: 100%;
         font-size: 14px;
@@ -273,8 +283,10 @@ body{
 }
 
 .calendar-list{
+    width: 100%;
     .calendar-block{
         display:flex;
+        width: 100%;
         align-items: center;
         margin-bottom: 10px;
         .calendar-content{
@@ -445,6 +457,39 @@ body{
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+    .media-block{
+        width: calc(50% - 30px);
+    }
+    .news-block{
+        width: calc(50% - 30px);
+    }
+    .calendar-list{
+        .calendar-block{
+            flex-wrap:wrap;
+            justify-content: center;
+            .date-block{
+                margin: 0 0 5px 0;
+                .date{
+                    font-size: 12px;
+                    width: initial;
+                    padding:0 5px;
+                    height: 20px;
+                    margin-right: 5px;
+                    span{
+                        display: inline-block;
+                    }
+                }
+                .time{
+                    font-size: 12px;
+                    width: initial;
+                    padding:0 5px;
+                    height: 20px;
+                    line-height: 20px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
     .grid-sizer{
         width: 50%;
     }
@@ -465,7 +510,118 @@ body{
 }
 
 @media only screen and (max-width : 767px) {
-
+    .content-module{
+        .page-top{
+            .title{
+                white-space:nowrap;
+                font-size: 20px;
+            }
+        }
+    }
+    .table-wrap{
+        width: 100%;
+        overflow-x:auto;
+        .td-table-img-min-wrap{
+            max-width: 150px;
+        }
+        table{
+            min-width: 500px;
+            tr{
+                th{
+                    font-size: 12px;
+                }
+                td{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .calendar-list{
+        .calendar-block{
+            border-bottom:solid 1px #ccc;
+            padding-bottom: 5px;
+            .calendar-content{
+                flex-wrap:wrap;
+                justify-content: center;
+                text-align: center;
+                padding:0;
+                background: #fff;
+                .center{
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    .count{
+                        margin: 10px 5px;
+                        font-size: 14px;
+                        padding:5px;
+                    }
+                    .team-img{
+                        height: initial;
+                        width: 20px;
+                        margin: 0 5px;
+                    }
+                    .team{
+                        width: 80px;
+                        margin: 0;
+                        text-align: left;
+                        &.tr{
+                            text-align: left;
+                        }
+                        .team-name{
+                            width: 100%;
+                            font-size: 14px;
+                        }
+                        .location{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tabs{
+        ul.tabs-nav{
+            width: 100%;
+            overflow-x:auto;
+            li{
+                a{
+                    padding:10px 15px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+        .tournament-details-page{
+            padding:15px;
+            .top-info{
+                flex-wrap:wrap;
+                position: relative;
+                margin-bottom: 10px;
+                .img-wrap{
+                    margin: 0;
+                    width: 80px;
+                    position: absolute;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text{
+                    flex-wrap:wrap;
+                    width: 100%;
+                    .title{
+                        font-size: 18px;
+                        margin: 4px 0 30px 95px;
+                    }
+                    .row{
+                        flex-wrap:wrap;
+                        .col{
+                            width: 100%;
+                            margin: 0 0 10px 0;
+                        }
+                    }
+                }
+            }
+        }
         .news-list{
             .news-block{
                 width: 100%;
