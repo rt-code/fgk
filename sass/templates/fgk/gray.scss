@@ -66,6 +66,68 @@ body{
         }
     }
 
+    .back-btn{
+        background: $yellow;
+        text-decoration: none;
+        text-align: center;
+        padding:15px;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color:$color-dark;
+        font-family: $w700;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        margin: 30px auto 0;
+        span{
+            &.arrow{
+                margin-right: 20px;
+                svg{
+                    width: 7px;
+                    fill:$color-dark;
+                    transform:rotate(-180deg);
+                }
+            }
+        }
+        &:hover{
+            background: darken($yellow, 10%);
+        }
+    }
+
+.person-list{
+    padding:30px 15px;
+    display:flex;
+    flex-wrap:wrap;
+    .person{
+        display: block;
+        width: calc(20% - 30px);
+        margin: 0 15px 30px 15px;
+        text-decoration: none;
+        &:hover{
+            .name{
+                color:$green;
+            }
+        }
+        .name{
+            font-size: 18px;
+            margin: 10px 0 5px;
+            font-family: $w500;
+            color:$color;
+        }
+        .desc{
+            font-size: 14px;
+            color:$color;
+        }
+        .img-wrap{
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
 .news-list-page{
     padding:30px 15px;
 }
@@ -550,7 +612,67 @@ body{
     }
 }
 
+.text{
+    img{
+        max-width: 100%;
+    }
+    p{
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: $w700;
+        color:$color;
+    }
+    h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-family: $w500;
+        color:$color;
+    }
+    h3{
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-family: $w500;
+        color:$color;
+    }
+}
+
+.news-details-page{
+    padding:30px;
+    .page-title{
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: $w700;
+        color:$color;
+    }
+    .date{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .image-wrap{
+        width: 100%;
+        background: lighten($color-light, 15%);
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
 @media only screen and (max-width : 1040px) {
+    .person-list{
+        .person{
+            width: calc(33.333% - 30px);
+        }
+    }
     #wrapper{
         width: 100%;
         padding-left: 0 !important;
@@ -614,6 +736,25 @@ body{
 }
 
 @media only screen and (max-width : 767px) {
+    .news-details-page {
+        padding:30px 15px;
+        .page-title{
+            font-size: 24px;
+        }
+    }
+    .back-btn{
+        margin: 15px 0;
+    }
+    .person-list{
+        padding:15px 5px;
+        .person{
+            width: calc(50% - 15px);
+            margin: 0 7.5px 15px;
+            .name{
+                font-size: 14px;
+            }
+        }
+    }
     .tournaments-page{
         padding:15px;
         .tournaments-top{
